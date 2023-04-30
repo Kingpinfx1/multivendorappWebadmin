@@ -109,6 +109,32 @@ class _MainScreenState extends State<MainScreen> {
         onSelected: (item) {
           screenSelector(item);
         },
+        header: Container(
+          height: 50,
+          width: double.infinity,
+          color: Colors.yellow.shade900,
+          child: const Center(
+            child: Text(
+              'Kingpin Store Panel',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
+        footer: Container(
+          height: 50,
+          width: double.infinity,
+          color: Colors.yellow.shade900,
+          child: const Center(
+            child: Text(
+              'Kingpin Stores 2023',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
       ),
       body: _selectedItem,
     );
